@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Sampadasgowda/git-maven-simple.git'
+                git branch: 'main', url: 'https://github.com/Sampadasgowda/git-maven-simple.git'
             }
         }
         stage('Build') {
@@ -22,4 +22,4 @@ pipeline {
             }
         }
     }
-}  
+}
